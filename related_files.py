@@ -79,7 +79,6 @@ def by_path_patterns(view):
     related_files = cache.get_for_path(view.file_name(), view.window())
 
     if not related_files.from_cache:
-        print "IS NEW path"
         for paths in paths_for_pattern('open_related_patterns', view):
             for path in paths:
                 if os.path.exists(path):
@@ -92,7 +91,6 @@ def by_filename_patterns(view):
     related_files = cache.get_for_filename(view.file_name(), view.window())
 
     if not related_files.from_cache:
-        print "IS NEW name"
         for patterns in paths_for_pattern('open_related_file_patterns', view):
             for path_pattern in patterns:
                 name_pattern = os.path.basename(path_pattern)
