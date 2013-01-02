@@ -8,9 +8,9 @@
     ],
     "open_related_file_patterns":
     [
-      ["*.js", "*.spec.js"],
-      ["*.js", "*.test.js"],
-      ["*.js", "*_spec.js"],
-      ["*.js", "*_test.js"]
+      ["*.spec.js", "*.js"],
+      ["*.test.js", "*.js"],
+      ["*_spec.js", "*.js"],
+      ["*_test.js", "*.js"]
     ]
 }
