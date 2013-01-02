@@ -45,6 +45,10 @@ class RelatedFileCache(object):
     related_files = {}
     related_file_names = {}
 
+    def reset(self):
+        self.related_files = {}
+        self.related_file_names = {}
+
     def get_for_path(self, key, window):
         result = None
 
@@ -73,6 +77,10 @@ class RelatedFileCache(object):
 
 
 cache = RelatedFileCache()
+
+
+def clear_cache():
+    cache.reset()
 
 
 def by_path_patterns(view):
