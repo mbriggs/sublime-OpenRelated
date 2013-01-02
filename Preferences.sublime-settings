@@ -5,5 +5,12 @@
       ["*/src/*.js", "*/test/*Test.js"],
       ["*/lib/*.js", "*/test/*Spec.js"],
       ["*/lib/*.js", "*/test/*Test.js"]
+    ],
+    "open_related_file_patterns":
+    [
+      ["*.js", "*.spec.js"],
+      ["*.js", "*.test.js"],
+      ["*.js", "*_spec.js"],
+      ["*.js", "*_test.js"]
     ]
 }
