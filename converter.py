@@ -12,16 +12,16 @@ class Converter(object):
 
     def convert(self, path):
         results = []
-        lenght = len(self.from_re)
+        length = len(self.from_re)
 
-        for i in range(lenght):
+        for i in range(length):
             match = self.from_re[i].match(path)
             if not match: continue
 
-            j = (i + 1) % lenght
+            j = (i + 1) % length
             while (j is not i):
                 results.append(self.to_exp[j].format(*match.groups()))
-                j = (j + 1) % lenght
+                j = (j + 1) % length
 
             break
 
